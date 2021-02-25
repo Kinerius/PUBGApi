@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
+using Application.Scripts.Domain.Dto;
 
-namespace Domain
+namespace Application.Scripts.Domain
 {
     public interface IPubgService
     {

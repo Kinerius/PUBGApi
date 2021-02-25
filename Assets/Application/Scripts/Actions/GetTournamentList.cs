@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Linq;
-using Domain;
+using Application.Scripts.Domain;
+using Application.Scripts.Domain.Dto;
+using Application.Scripts.Model;
 using UniRx;
 
-namespace Actions
+namespace Application.Scripts.Actions
 {
     public class GetTournamentList
     {

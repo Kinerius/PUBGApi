@@ -1,11 +1,10 @@
 using System;
-using System.Linq;
+using Application.Scripts.Domain.Dto;
 using Newtonsoft.Json;
 using UniRx;
-using UnityEngine;
 using UnityEngine.Networking;
 
-namespace Domain
+namespace Application.Scripts.Domain
 {
     public class PubgService : IPubgService
     {

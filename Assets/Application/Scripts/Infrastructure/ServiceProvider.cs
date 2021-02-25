@@ -1,7 +1,7 @@
-﻿using Actions;
-using Domain;
+﻿using Application.Scripts.Actions;
+using Application.Scripts.Domain;
 
-namespace Infrastructure
+namespace Application.Scripts.Infrastructure
 {
     public static class ServiceProvider
     {

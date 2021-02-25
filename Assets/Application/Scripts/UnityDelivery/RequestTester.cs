@@ -1,9 +1,10 @@
-﻿using Domain;
-using Infrastructure;
+﻿using Application.Scripts.Domain;
+using Application.Scripts.Infrastructure;
+using Application.Scripts.Model;
 using UniRx;
 using UnityEngine;
 
-namespace UnityDelivery
+namespace Application.Scripts.UnityDelivery
 {
     public class RequestTester : MonoBehaviour
     {

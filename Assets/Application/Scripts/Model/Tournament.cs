@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Domain
+namespace Application.Scripts.Model
 {
     public struct Tournament
     {
