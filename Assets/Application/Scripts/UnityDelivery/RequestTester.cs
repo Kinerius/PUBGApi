@@ -1,5 +1,4 @@
-﻿using Application.Scripts.Domain;
-using Application.Scripts.Infrastructure;
+﻿using Application.Scripts.Infrastructure;
 using Application.Scripts.Model;
 using UniRx;
 using UnityEngine;

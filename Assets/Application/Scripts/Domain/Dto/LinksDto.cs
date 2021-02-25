@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Application.Scripts.Domain
+namespace Application.Scripts.Domain.Dto
 {
     [Serializable]
     public struct LinksDto

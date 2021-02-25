@@ -13,13 +13,13 @@
             </e>
             <e p="Domain" t="Include">
               <e p="Dto" t="Include">
+                <e p="LinksDto.cs" t="Include" />
                 <e p="TournamentAttributesDto.cs" t="Include" />
                 <e p="TournamentDto.cs" t="Include" />
                 <e p="TournamentRequestDto.cs" t="Include" />
               </e>
               <e p="IPubgService.cs" t="Include" />
               <e p="IWebClient.cs" t="Include" />
-              <e p="LinksDto.cs" t="Include" />
               <e p="PubgService.cs" t="Include" />
               <e p="WebClient.cs" t="Include" />
             </e>
