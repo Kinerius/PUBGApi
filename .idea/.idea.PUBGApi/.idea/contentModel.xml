@@ -18,8 +18,10 @@
                 <e p="TournamentRequestDto.cs" t="Include" />
               </e>
               <e p="IPubgService.cs" t="Include" />
+              <e p="IWebClient.cs" t="Include" />
               <e p="LinksDto.cs" t="Include" />
               <e p="PubgService.cs" t="Include" />
+              <e p="WebClient.cs" t="Include" />
             </e>
             <e p="Infrastructure" t="Include">
               <e p="ServiceProvider.cs" t="Include" />

@@ -7,20 +7,26 @@ namespace Application.Scripts.Infrastructure
     {
         private static IPubgService _pubgService;
         private static GetTournamentList _getTournamentListAction;
+        private static IWebClient _webClient;
 
         public static GetTournamentList GetTournamentList()
         {
-            return _getTournamentListAction ?? CreateGetTournamentListAction();
+            return _getTournamentListAction ??= CreateGetTournamentListAction();
         }
 
         private static GetTournamentList CreateGetTournamentListAction()
         {
-            return new GetTournamentList( _pubgService ?? CreatePubgService() );
+            return new GetTournamentList( _pubgService ??= CreatePubgService() );
         }
 
         private static IPubgService CreatePubgService()
         {
-            return new PubgService();
+            return new PubgService( _webClient ??= CreateWebClient() );
+        }
+
+        private static IWebClient CreateWebClient()
+        {
+            return new WebClient();
         }
     }
 }
