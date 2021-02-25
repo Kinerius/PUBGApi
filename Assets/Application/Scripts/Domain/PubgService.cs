@@ -1,4 +1,5 @@
 using System;
+using System.Net;
 using Application.Scripts.Domain.Dto;
 using Newtonsoft.Json;
 using UniRx;
@@ -18,8 +19,17 @@ namespace Application.Scripts.Domain
 
             return request.SendWebRequest().AsAsyncOperationObservable()
                 .Where(r => r.isDone)
+                .Do(r => CheckResponse(r.webRequest))
                 .Select(_ => request.downloadHandler.text)
-                .Select(response => ParseResponse(response));
+                .Select(ParseResponse);
+        }
+
+        private void CheckResponse(UnityWebRequest webRequest)
+        {
+            if (webRequest.result != UnityWebRequest.Result.Success)
+            {
+                throw new WebException(webRequest.error);
+            }
         }
 
         private TournamentDto[] ParseResponse(string response)
